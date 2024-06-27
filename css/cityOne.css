@@ -1,0 +1,156 @@
+body {
+  margin: 0;
+}
+.navContainer {
+  height: 100px;
+}
+ul {
+  background-color: #fff;
+  border-bottom: white solid 1px;
+  list-style-type: none;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  position: fixed;
+  width: 100%;
+}
+
+ul li {
+  display: inline-block;
+  padding: 10px;
+}
+
+a {
+  color: black;
+  cursor: pointer;
+  display: inline;
+  font-size: 18px;
+  font-family: "Athiti";
+  font-weight: 100;
+  letter-spacing: 6px;
+  text-decoration: none;
+  text-transform: capitalize;
+  word-wrap: break-word;
+}
+a:hover {
+  color: #991d29;
+  font-size: medium;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: 33.3% 33.3% auto;
+  margin: 0px 20px;
+  gap: 20px;
+}
+.card {
+  height: 530px;
+  padding: 10px 0;
+  text-align: center;
+}
+
+@media screen and (min-width: 500px) {
+  .card-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 10px;
+  }
+  .card {
+    height: 470px;
+  }
+  .card-P {
+    margin-top: -13px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .card-container {
+    display: grid;
+    grid-template-columns: auto;
+    gap: 10px;
+  }
+  .card {
+    height: 1100px;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .card-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 10px;
+  }
+  .card {
+    height: 740px;
+  }
+}
+
+img {
+  height: 250px;
+  width: 479px;
+}
+.card-h2 {
+  color: black;
+  font-family: "Athiti";
+  font-size: 34px;
+  letter-spacing: 35px;
+  font-weight: 100;
+}
+
+.card-h2:hover {
+  color: #a26363;
+}
+
+.card-P {
+  color: black;
+  font-family: "Athiti";
+  font-size: 16px;
+  font-weight: 100;
+  line-height: 25px;
+  margin-left: 10%;
+  margin-right: 20%;
+  margin-top: 20px;
+  text-transform: none;
+  text-align: start;
+  word-wrap: break-word;
+}
+
+table {
+  gap: 20px;
+  font-size: 13px;
+  height: 220px;
+  table-layout: fixed;
+  margin-top: 120px;
+  width: 100%;
+}
+
+td,
+th {
+  color: black;
+  font-size: 16px;
+  font-weight: 100;
+  font-family: "Athiti";
+  letter-spacing: 3px;
+  text-transform: lowercase;
+  text-align: center;
+}
+
+td > a,
+th {
+  color: black;
+  font-size: 16px;
+  font-weight: 100;
+  font-family: "Athiti";
+  letter-spacing: 3px;
+  text-transform: lowercase;
+}
+
+.tableA {
+  color: black;
+  font-size: small;
+  text-transform: lowercase;
+}
+
+.footer {
+  margin: 30px 20px 20px 20px;
+}

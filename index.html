@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="/public/favicon.png" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <title>Welcome to Oklahoma</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Athiti:wght@200;300;400;500;600;700&family=Baskervville&family=Forum&family=Lora&family=Marcellus&family=Open+Sans:wght@300&family=Paytone+One&family=Poiret+One&family=Work+Sans&family=Zen+Kurenaido&display=swap"
+    rel="stylesheet" />
+  <script src="/validate.js"></script>
+</head>
+
+<body>
+  <div class="gridContainer">
+    <div class="navContainer">
+      <nav class="nav">
+        <ul class="ul">
+          <li>
+            <a href="/">Home</a>
+          </li>
+          <li>
+            <a href="/pages/capitol.html">Capitol</a>
+          </li>
+          <li>
+            <a href="/pages/cityOne.html">
+              Tulsa
+            </a>
+          </li>
+          <li>
+            <a href="/pages/cityTwo.html">
+              Norman
+            </a>
+          </li>
+          <li>
+            <a href="/pages/attractions.html">Attractions</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <main>
+      <section class="welcome">
+        <header class="head">
+          <h1 class="exploreH1">Explore Oklahoma</h1>
+        </header>
+        <aside>
+          <em> Why Plan a Visit?</em>
+          <ol>
+            <li class="asidelist"> <b>Diverse Native American Heritage: </b>Oklahoma is home to 39 federally recognized Native American tribes, more than any other state. The name "Oklahoma" itself comes from the Choctaw words "okla" and "humma," meaning "red people." The state's rich indigenous heritage is celebrated through numerous cultural centers, museums, and annual events like the Red Earth Festival<cite><a style="font-size: 7px;" href="https://www.justice.gov/usao-ndok/indian-country#:~:text=There%20are%2038%20federally%20recognized,the%20Northern%20District%20of%20Oklahoma.">United States Department of Justice</a></cite>. </li>
+            <li class="asidelist"> <b> Route 66:</b> Oklahoma boasts the longest drivable stretch of the iconic Route 66, also known as the "Main Street of America." This historic highway runs for 400 miles through the state, offering travelers a nostalgic journey through vintage diners, retro motels, and quirky roadside attractions that capture the spirit of mid-20th century America <cite><a style="font-size: 7px;" href="https://plan.travelok.com/route66ers/">Travel OKC</a></cite>. </li>
+            <li class="asidelist"><b b>Natural Wonders:</b> Oklahoma features a diverse range of landscapes, from the Great Plains to the Ozark Mountains. The state is home to more than 200 lakes and numerous state parks, offering ample opportunities for outdoor recreation. Notable natural attractions include the Wichita Mountains Wildlife Refuge, which provides stunning views and a habitat for a variety of wildlife, including bison and elk  <cite><a style="font-size: 7px;" href="https://www.travelok.com/articles/oklahomasdiverseecoregions#:~:text=Oklahoma's%20ecoregions%20%E2%80%93%20or%2C%20terrains%2F,Hiking.">Travel OK</a></cite>.
+            </li>
+          </ol>
+        </aside>
+        <p class="welcomePara">
+          Discover the hidden gems of Oklahoma, a state that offers a blend of natural beauty, rich history, and vibrant
+          culture. From the stunning landscapes of the Wichita Mountains Wildlife Refuge to the serene shores of Broken
+          Bow Lake, outdoor enthusiasts will find plenty to explore. Embark on a journey through Oklahoma's diverse
+          ecosystems, where hiking, fishing, and wildlife watching await. The state’s charming small towns, with their
+          unique shops and local cuisine, provide a delightful escape from the ordinary. Whether you're seeking
+          adventure or relaxation, Oklahoma's great outdoors promise unforgettable experiences.
+        
+        <br/>
+        <br/>
+          Immerse yourself in the rich cultural tapestry of Oklahoma, where Native American heritage, cowboy traditions,
+          and modern artistry come together in a captivating mix. Visit the National Cowboy & Western Heritage Museum
+          and the Gilcrease Museum to delve into the state's storied past. Oklahoma City’s revitalized Bricktown
+          district offers a lively atmosphere with its array of dining, entertainment, and shopping options. Don't miss
+          the vibrant festivals and events that showcase the state’s diverse communities and traditions. Oklahoma’s
+          welcoming spirit and dynamic attractions make it an ideal destination for travelers of all ages.
+        
+        </p>
+      </div>
+
+      <header class="signup">
+        <h2 class="signupHeader">Sign up</h2>
+      </header>
+      <div class="div1">
+
+        <form id="form" class="signupForm" name="signupForm" onsubmit=" return validateEmails()"
+        >
+          <p class="formP">
+            <label class="formLabel" for="firstname" />
+            <input type="text" placeholder="First Name" size=50 />
+          </p>
+          <p class="formP">
+            <label class="formLabel" for="lastName" />
+            <input type="text" placeholder="Last Name" size=50 />
+          </p>
+
+          <p class="formP">
+            <label class="formLabel" for="email" />
+            <input id="emails" type="email" name="email" required placeholder="Email" size=50 />
+          </p>
+          <p class="formP">
+            <label class="formLabel" for="verifyEmail" />
+            <input id="verifyemail" type="email"  name="email" required placeholder="Verify Email" size=50 />
+          </p>
+          <span id="errorMessage" class="error"></span>
+          <span class="formP">Leave us a message</span>
+          <p class="formP">
+            <label class="formLabel" for="textarea" />
+            <textarea id="textareas" required name="textarea" placeholder="Message"></textarea>
+          </p>
+          <p class="formP">
+            <input type="submit" value="Submit">
+          </p>
+      </div>
+      </form>
+
+  </div>
+  <div>
+    <h3 class="exploreH1">Oklahoma Attractions</h3>
+  </div>
+  <div class="card-container">
+    <div class="card">
+      <a href="https://www.turnerfallspark.com/" target="_blank">
+
+        <h2 class="card-h2">Davis, OK</h2>
+      </a>
+      <img src="/images/arbuckle.jpeg" alt="a waterfall located at Turner Fall in Oklahoma" />
+      <cite
+            ><a style="font-size: 7px;"
+            target="_blank"
+              href="https://www.metrofamilymagazine.com/oklahoma-swimming-holes/"
+              > Image Source</a
+            ></cite
+          >
+      <p class="card-P">
+        Need a break from the all the noise that comes with living in a busy
+            city? Why not schedule a weekend retreat at Turner Falls one of
+            Oklahoma's breath taking waterfall parks. <br />Nestled amidst the
+            serene landscapes of Oklahoma, Davis invites you to embark on a
+            journey of discovery and tranquility. As you venture into this
+            charming town, you'll be greeted by a tapestry of natural wonders
+            and rich cultural heritage. Explore the wonders of the Chickasaw
+            National Recreation Area, where crystal-clear springs and lush
+            forests offer a haven for outdoor enthusiasts. Whether you're hiking
+            along scenic trails, cooling off in refreshing swimming holes, or
+            picnicking in idyllic settings, the park promises an immersive
+            experience in the heart of nature.
+      </p>
+    </div>
+    <div class="card">
+      <a href="https://memorialmuseum.com/" target="_blank">
+
+        <h2 class="card-h2">Downtown, OKC</h2>
+      </a>
+      <img src="/images/memorial.jpeg" alt="Card 1" />
+      <cite
+      ><a style="font-size: 7px;"
+        href="https://www.idealhomes.com/blog/oklahoma-city-national-memorial-and-museum-so-the-world-never-forgets"
+        > Image Source</a
+      ></cite
+    >
+      <p class="card-P">
+        Step into the heart of Oklahoma's rich history and political legacy
+        with a visit to the majestic Oklahoma Capitol Building. Nestled in
+        the vibrant city of Oklahoma City, this architectural marvel stands
+        tall as a symbol of the state's democratic ideals and cultural
+        heritage. As you approach the Capitol, you'll be greeted by its
+        imposing facade adorned with intricate details and flanked by
+        beautifully landscaped grounds. Step inside to marvel at the
+        grandeur of the rotunda, where sunlight streams through stained
+        glass windows, casting a warm glow on the marble floors below. Take
+        a guided tour to discover the fascinating stories behind the
+        building's construction, its historical significance, and the
+        important role it plays in shaping Oklahoma's governance today.
+      </p>
+    </div>
+    <div class="card">
+      <a href="https://www.okhouse.gov/capitol-tours" target="_blank">
+
+        <h2 class="card-h2">Oklahoma City, OK</h2>
+      </a>
+      <img src="/images/okcCap.jpeg" alt="OKC Capitol" />
+      <cite
+      ><a style="font-size: 7px;"
+        href="https://www.okcommerce.gov/commerce-worked-to-strengthen-states-economic-development-efforts/"
+        > Image Source</a
+      ></cite
+    >
+      <p class="card-P">
+        Immerse yourself in the electrifying atmosphere of an Oklahoma
+        Thunder game, where passion for basketball meets the thrill of live
+        entertainment. From the moment you step into the Chesapeake Energy
+        Arena, you'll be swept up by the contagious energy of fans decked
+        out in Thunder gear, eagerly anticipating the upcoming showdown on
+        the court. As the players take to the hardwood, you'll be on the
+        edge of your seat, marveling at their skillful maneuvers and
+        lightning-fast plays. Whether you're a die-hard basketball
+        aficionado or simply looking for an unforgettable night out, a
+        Thunder game offers an experience like no other, where every
+        dribble, dunk, and three-pointer unfolds amidst a symphony of cheers
+        and applause.
+      </p>
+    </div>
+    <div class="card">
+      <a href="https://www.nba.com/thunder" target="_blank">
+        <h2 class="card-h2">Oklahoma NBA Thunder</h2>
+      </a>
+      <img src="/images/thunder.jpeg" alt="NBA Thunder fans" />
+      <cite><a style="font-size: 7px;" href="https://www.nba.com/thunder/">Image Source</a></cite>
+      <p class="card-P">
+        Beyond the court, the Chesapeake Energy Arena offers an array of
+        amenities to enhance your game-day experience. Indulge in a
+        mouthwatering selection of concessions ranging from classic stadium
+        fare to gourmet delights, ensuring that your taste buds are as
+        entertained as your senses. Explore the arena's interactive exhibits
+        and fan zones, where you can test your skills, snap a selfie with
+        Thunder memorabilia, or engage in pre-game festivities with fellow
+        enthusiasts. Whether you're rooting for the Thunder or cheering on
+        the opposing team, attending a game at the Chesapeake Energy Arena
+        is more than just a spectator sport—it's a celebration of
+        athleticism, camaraderie, and the enduring spirit of basketball in
+        the heart of Oklahoma.
+      </p>
+      <span> <em>THUNDER UP</em></span>
+    </div>
+  </div>
+  </main>
+  <div class="foot" id="foot">
+    <table>
+      <tr>
+        <th>Contact Us</th>
+        <th>About Us</th>
+        <th>Tag Us</th>
+      </tr>
+      <tr>
+        <td class="td" id="td">Phone: 405-443-3770
+        </td>
+        <td>Our Story</td>
+        <td><a href="https://www.facebook.com/">facebook</a></td>
+      </tr>
+      <tr>
+        <td>Email: <a class="tableA" href="mailto:visitoklahoma@local.com">visitoklahoma@local.com</a> </td>
+        <td>Donations</td>
+        <td><a href="https://www.instagram.com/">Instagram</a></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td>Partners</td>
+        <td><a href="https://twitter.com/?lang=en">X</a></td>
+      </tr>
+    </table>
+  </div>
+  </div>
+</body>
+
+</html>

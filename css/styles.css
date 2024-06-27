@@ -1,0 +1,416 @@
+body {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+
+@media screen and (min-width: 500px) {
+  ul li {
+    display: inline;
+    padding: 7px;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  body {
+    grid-template-columns: 200px auto;
+    grid-template-rows: 50px 150px 150px 50px;
+    grid-template-areas:
+      "head head"
+      "nav main"
+      "aside main"
+      "foot foot";
+  }
+}
+
+@media screen and (min-width: 800px) {
+  body {
+    grid-template-columns: 200px auto 200px;
+    grid-template-rows: 50px 300px 50px;
+    grid-template-areas:
+      "head head head"
+      "nav main aside"
+      "foot foot foot";
+  }
+  .card {
+    height: 100px;
+  }
+  ul li {
+    display: inline;
+    padding: 7px;
+  }
+}
+
+ul {
+  background-color: #fff;
+  border-bottom: white solid 1px;
+  height: 80px;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  position: fixed;
+  text-align: center;
+  width: 100%;
+}
+
+ul li {
+  display: inline;
+  /* padding: 20px; */
+}
+
+a {
+  color: black;
+  cursor: pointer;
+  display: inline;
+  font-size: 22px;
+  font-family: "Athiti";
+  font-weight: 100;
+  letter-spacing: 6px;
+  text-decoration: none;
+  text-transform: capitalize;
+  /* word-wrap: break-word; */
+  word-break: keep-all;
+}
+a:hover {
+  color: #991d29;
+  font-size: medium;
+}
+
+main {
+  margin: 20px 20px;
+}
+header {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  top: 70px;
+  padding: 20px;
+  font-size: 30px;
+  width: 100%;
+}
+
+.exploreH1 {
+  color: black;
+  font-size: 42px;
+  font-weight: 100;
+  font-family: "Athiti";
+  justify-content: center;
+  letter-spacing: 16px;
+  margin: 20px 20px 20px 20px;
+  text-decoration: none;
+  text-transform: capitalize;
+  word-wrap: break-word;
+}
+
+@media screen and (max-width: 500px) {
+  .exploreH1 {
+    font-size: 16px;
+    margin-bottom: 20px;
+    text-align: start;
+  }
+  .attractions {
+    margin-bottom: 30px;
+  }
+  img {
+    width: auto;
+    height: auto;
+  }
+  a {
+    font-size: 12px;
+  }
+}
+
+p {
+  color: black;
+  font-size: 18px;
+  font-weight: 100;
+  font-family: "Athiti";
+  line-height: 26px;
+  letter-spacing: 5px;
+  padding: 10px;
+  margin: 0;
+  word-wrap: break-word;
+  width: 68%;
+}
+
+aside {
+  background-color: #fefaf6;
+  color: black;
+  float: right;
+  font-weight: 100;
+  font-family: "Athiti";
+  line-height: 30px;
+  text-align: center;
+  top: 30px;
+  width: 30%;
+}
+
+.signupDiv {
+  display: flex;
+  height: 400px;
+  width: 100%;
+}
+
+.signupForm {
+  flex-grow: 2;
+  height: 300px;
+}
+
+.signupHeader {
+  color: black;
+  display: inline-block;
+  font-size: 22px;
+  font-weight: 100;
+  font-family: "Athiti";
+  height: 20px;
+  letter-spacing: 16px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: capitalize;
+  width: 100%;
+  word-wrap: break-word;
+}
+
+.formP {
+  box-sizing: border-box;
+  display: flex;
+
+  height: 45px;
+  padding: 10px;
+  justify-content: center;
+  width: 100%;
+}
+
+textarea {
+  height: 30px;
+}
+
+label,
+input {
+  color: black;
+  border: 0.5px solid #969a97;
+  display: flex;
+  font-family: "Athiti";
+  outline: none;
+  text-align: center;
+}
+.gridContainer {
+  display: grid;
+  grid-template-columns: repeat(6);
+}
+
+h3 {
+  color: black;
+  display: flex;
+  font-size: 22px;
+  font-weight: 100;
+  font-family: "Athiti";
+  justify-content: center;
+  letter-spacing: 16px;
+  margin: 20px 20px 20px 20px;
+  text-decoration: none;
+  text-transform: capitalize;
+  word-wrap: break-word;
+}
+.navContainer {
+  grid-column: 1/6;
+}
+.welcome {
+  grid-column: 1/6;
+  margin: 61px;
+}
+@media screen and (man-width: 600px) {
+  .welcome {
+    height: 1305px;
+  }
+  p {
+    height: 1000px;
+    width: 100%;
+  }
+}
+.signup {
+  grid-column: 1/6;
+}
+@media screen and (max-width: 788px) {
+  .div1 {
+    /* margin-top: 200px; */
+  }
+}
+.div1 {
+  gap: 7px;
+  grid-column: 1/6;
+  border-radius: 50px;
+  border: 1px solid #969a97;
+  height: 350px;
+}
+
+.foot {
+  grid-column: 1/6;
+  display: flex;
+  margin: 20px 20px 20px 20px;
+}
+.attractions {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: 200px 200px;
+  gap: 20px;
+  margin: 0px 20px 40px 20px;
+  width: auto;
+}
+
+.attractionImg > div {
+  font-size: 30px;
+  padding: 20px 0px;
+  text-align: center;
+  width: auto;
+}
+
+.homeImg {
+  height: 200px;
+  width: 100%;
+}
+
+table {
+  gap: 20px;
+  font-size: 13px;
+  height: 220px;
+  table-layout: fixed;
+  width: 100%;
+}
+
+td,
+th {
+  color: black;
+  font-size: 16px;
+  font-weight: 100;
+  font-family: "Athiti";
+  letter-spacing: 3px;
+  text-transform: lowercase;
+  text-align: center;
+}
+td > a,
+th {
+  color: black;
+  font-size: 16px;
+  font-weight: 100;
+  font-family: "Athiti";
+  letter-spacing: 3px;
+  text-transform: lowercase;
+}
+.asidelist {
+  color: black;
+  font-size: 14px;
+  font-weight: 100;
+  font-family: "Athiti";
+  top: 30px;
+  text-align: start;
+}
+
+.tableA {
+  color: black;
+  font-size: small;
+  text-transform: lowercase;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: 33.3% 33.3% auto;
+  margin: 0px 20px;
+  gap: 30px;
+}
+
+.card {
+  border-radius: 30px;
+  border: 1px solid #ccc;
+  height: 730px;
+  text-align: center;
+}
+@media screen and (min-width: 500px) {
+  .card-container {
+    display: grid;
+    grid-template-columns: auto auto;
+
+    gap: 10px;
+  }
+  .card {
+    height: 1339px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .card-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 10px;
+  }
+  .card {
+    height: 1339px;
+  }
+  aside {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  ul li {
+    display: inline-block;
+    padding: 10px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .card-container {
+    display: grid;
+    grid-template-columns: auto;
+    gap: 10px;
+    width: 50%;
+  }
+  .card {
+    height: 1360px;
+  }
+  table {
+    width: 100%;
+  }
+  img {
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .card-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 10px;
+  }
+  .card {
+    height: 1194px;
+  }
+}
+
+img {
+  height: 250px;
+  width: 479px;
+}
+.card-h2 {
+  color: black;
+  font-family: "Athiti";
+  font-size: 24px;
+  font-weight: 100;
+}
+
+.card-h2:hover {
+  color: #a26363;
+}
+
+.card-P {
+  color: black;
+  font-family: "Athiti";
+  font-size: 15px;
+
+  margin: 10px 0px 0px 49px;
+  word-wrap: break-word;
+  text-transform: none;
+  text-align: start;
+}
+
+#foot {
+  background-color: #fff;
+}
